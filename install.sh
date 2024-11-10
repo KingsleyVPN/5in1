@@ -75,7 +75,7 @@ echo "deb http://ftp.debian.org/debian/ jessie main contrib non-free
     update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30
     update-alternatives --set c++ /usr/bin/g++
     cd /usr/src
-    wget https://raw.githubusercontent.com/TheVinci23/Hysteria/main/squid-3.1.23.tar.gz
+    wget https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/5/squid-3.1.23.tar.gz
     tar zxvf squid-3.1.23.tar.gz
     cd squid-3.1.23
     ./configure --prefix=/usr \
@@ -89,7 +89,7 @@ echo "deb http://ftp.debian.org/debian/ jessie main contrib non-free
       --with-pidfile=/var/run/squid.pid
     make -j$(nproc)
     make install
-    wget --no-check-certificate -O /etc/init.d/squid https://raw.githubusercontent.com/TheVinci23/Hysteria1/main/squid
+    wget --no-check-certificate -O /etc/init.d/squid https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/6/squid
     chmod +x /etc/init.d/squid
     update-rc.d squid defaults
     chown -cR proxy /var/log/squid
@@ -829,7 +829,7 @@ echo '{
   "up_mbps": 100,
   "down_mbps": 100,
   "disable_udp": false,
-  "obfs": "ymodified",
+  "obfs": "kaldag",
   "auth": {
     "mode": "external",
     "config": {
