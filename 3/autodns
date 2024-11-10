@@ -24,7 +24,7 @@ DOMAIN=erwan.fun
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
 SUB_DOMAIN=${sub}.erwan.fun
 CF_ID=air1moralesguimba@gmail.com
-CF_KEY=3206deacd1204afa426033544181c6b6051e6
+CF_KEY=5c32a1073093c1fbda7638386f49e292681af
 
 
 NS_DOMAIN=mtkdev-${SUB_DOMAIN}
