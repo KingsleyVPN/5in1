@@ -2,14 +2,14 @@
 #Script Variables
 apt update
 apt install sudo
-HOST='149.100.151.212';
-USER='u143354772_username';
-PASS='Cris@2024';
-DBNAME='u143354772_dbname';
+HOST='205.209.109.3';
+USER='joevpnco_vpn';
+PASS='joevpnco_vpn';
+DBNAME='joevpnco_vpn';
 PORT_TCP='1194';
 PORT_UDP='110';
 PORT_SSL='443';
-API_LINK='https://cornerstone-mobiledata.com/api/authentication/premium';
+API_LINK='https://ncs-flix.store//api/authentication/premium';
 API_KEY='JCMVPN';
 
 
